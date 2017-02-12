@@ -17,7 +17,7 @@
 //= require angular-rails-templates
 //= require turbolinks
 
-//= require_tree ../templates
+//= require_tree ./templates
 
 //= require ./angular/main
 //= require ./angular/controllers/home
