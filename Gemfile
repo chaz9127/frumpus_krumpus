@@ -5,7 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "awesome_print", require:"ap"
+gem 'jquery-ui-rails', '5.0.0'
+gem 'activeadmin', '~> 1.0.0.pre4'
+gem "paperclip", "~> 5.0.0"
 gem 'angular-rails-templates', '~> 1.0.2'
+gem 'devise'
 gem 'bower'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

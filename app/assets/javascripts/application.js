@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
+//= require jquery-ui/datepicker-ru
 //= require angular
 //= require angular-ui-router
 //= require angular-rails-templates
