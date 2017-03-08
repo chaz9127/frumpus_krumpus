@@ -1,1 +1,6 @@
-@import 'pattern/global'
+@import 'pattern/00-common/global';
+
+@import 'pattern/01-atoms/logo';
+@import 'pattern/01-atoms/nav-item';
+
+@import 'pattern/02-molecules/nav-bar';

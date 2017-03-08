@@ -1,0 +1,37 @@
+///
+
+$x-large-grid: (
+  media: 1200px
+);
+
+$large-grid: (
+  media: 1020px
+);
+
+$medium-grid: (
+  media: 768px
+);
+
+$small-grid: (
+  media: 480px
+);
+
+///
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: image-url('/files/images/bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.container {
+  padding-top: 20px;
+  @include container();
+}

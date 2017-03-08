@@ -1,0 +1,12 @@
+.nav-bar {
+  margin-bottom: 10px;
+  @include grid-column(6);
+  @include grid-push(3);
+  text-align: center;
+  @include grid-media($medium-grid){
+    text-align: right;
+  };
+  @include grid-media($x-large-grid){
+    text-align: left;
+  };
+}

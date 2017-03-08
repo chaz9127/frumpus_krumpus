@@ -1,0 +1,10 @@
+.logo-wrapper {
+  @include grid-column(6);
+  @include grid-push(3);
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 650px;
+}
