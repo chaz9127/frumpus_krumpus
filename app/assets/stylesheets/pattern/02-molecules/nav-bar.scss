@@ -1,12 +1,6 @@
 .nav-bar {
-  margin-bottom: 10px;
-  @include grid-column(6);
-  @include grid-push(3);
+  margin: 20px 0px 10px 0px;
+  @include grid-column(10);
+  @include grid-push(1);
   text-align: center;
-  @include grid-media($medium-grid){
-    text-align: right;
-  };
-  @include grid-media($x-large-grid){
-    text-align: left;
-  };
 }

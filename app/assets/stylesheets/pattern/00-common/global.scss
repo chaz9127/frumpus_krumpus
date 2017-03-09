@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'SeanHand';
+    src: font-url("Hand_Of_Sean_Demo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 ///
 
 $x-large-grid: (
@@ -14,6 +21,10 @@ $medium-grid: (
 
 $small-grid: (
   media: 480px
+);
+
+$x-small-grid: (
+  media: 0px
 );
 
 ///

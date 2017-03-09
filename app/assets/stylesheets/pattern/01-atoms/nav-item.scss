@@ -1,6 +1,33 @@
 .nav-bar-item {
   font-family: SeanHand, sans-serif;
-  padding-left: 25px;
+  padding: 0px 15px 2px 15px;
   list-style: none;
-  display: inline-block;
+  border-bottom: 2px black solid;
+  margin: 0px 10px 15px 10px;
+
+  &:hover, &.active {
+   border: none;
+   font-size: 20px;
+  }
+
+  @include grid-media($x-small-grid) {
+    display: inline;
+    &:after {
+      content: "\A";
+      white-space: pre;
+    }
+    .nav-bar-item-link {
+      display: inline-block;
+      padding-top: 15px;
+    }
+  }
+
+  @include grid-media($medium-grid) {
+    display: inline-block;
+  }
+
+  .nav-bar-item-link {
+    color: black;
+    text-decoration: none;
+  }
 }
