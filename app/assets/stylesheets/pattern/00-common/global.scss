@@ -35,6 +35,7 @@ $x-small-grid: (
 }
 
 body {
+  font-family: SeanHand, sans-serif;
   background-image: image-url('/files/images/bg.jpeg');
   background-repeat: no-repeat;
   background-size: 1400px;
@@ -45,4 +46,26 @@ body {
 .container {
   padding-top: 20px;
   @include container();
+}
+
+.row {
+  width: 100%;
+  @include clearfix();
+}
+
+/// Sticky Footer - https://css-tricks.com/couple-takes-sticky-footer/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -65px;
+}
+.footer,
+.push {
+  height: 65px;
 }

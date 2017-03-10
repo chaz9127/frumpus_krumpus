@@ -1,0 +1,16 @@
+.footer {
+  @include grid-column(6);
+  @include grid-push(3);
+
+  .footer-row {
+    margin-bottom: 20px;
+  }
+
+  .footer-detail {
+    float: left;
+  }
+  
+  .footer-detail:nth-child(2) {
+    float: right;
+  }
+}
