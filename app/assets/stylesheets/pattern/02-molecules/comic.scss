@@ -1,0 +1,25 @@
+.comic-wrapper {
+  @include grid-media($small-grid) {
+    @include grid-column(12);
+    @include grid-push(0);
+  }
+
+  @include grid-media($medium-grid) {
+    @include grid-column(10);
+    @include grid-push(1);
+  }
+  text-align: center;
+
+  .comic {
+    width: 75%;
+    @include grid-media($small-grid) {
+      width: 100%;
+    }
+
+    @include grid-media($medium-grid) {
+      width: 75%
+    }
+    max-width: 700px;
+    min-width: 500px;
+  }
+}

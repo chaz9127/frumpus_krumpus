@@ -18,6 +18,11 @@ function configFrumpKrump($stateProvider, $urlRouterProvider, $urlMatcherFactory
     .state('home', {
       url: '/',
       controller: 'HomeCtrl',
-      templateUrl:"home/index.html"
+      templateUrl:"home/_index.html"
+    })
+    .state('comic', {
+      url: '/comics/:id',
+      controller: 'HomeCtrl',
+      templateUrl:"home/_index.html"
     });
 }

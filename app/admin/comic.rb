@@ -31,7 +31,7 @@ ActiveAdmin.register Comic do
       row :comic_number
       row :title
       row :image do
-        image_tag(comic.image.url)
+        tag("img", src: comic.image.url)
       end
     end
   end

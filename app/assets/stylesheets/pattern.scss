@@ -1,7 +1,9 @@
 @import 'pattern/00-common/global';
 
+@import 'pattern/01-atoms/action-bar-item';
 @import 'pattern/01-atoms/logo';
-@import 'pattern/01-atoms/nav-item';
+@import 'pattern/01-atoms/nav-bar-item';
 
-@import 'pattern/02-molecules/nav-bar';
+@import 'pattern/02-molecules/comic';
 @import 'pattern/02-molecules/footer';
+@import 'pattern/02-molecules/nav-bar';

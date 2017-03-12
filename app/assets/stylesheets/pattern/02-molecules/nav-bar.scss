@@ -1,6 +1,10 @@
 .nav-bar {
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0px 0px 0px;
   @include grid-column(10);
   @include grid-push(1);
   text-align: center;
+
+  &.action-bar {
+
+  }
 }

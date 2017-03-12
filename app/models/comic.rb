@@ -1,6 +1,8 @@
 class Comic < ApplicationRecord
   has_attached_file :image,
-    default_url: ''
+    default_url: '',
+    path: "public/files/images/comics/:style/:basename",
+    url: "/files/images/comics/:style/:basename"
   validates :image,
       attachment_content_type: { content_type: /\Aimage\/.*\Z/ },
       attachment_size: { less_than: 2.megabytes }

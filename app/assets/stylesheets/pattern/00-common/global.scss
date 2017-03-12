@@ -69,3 +69,14 @@ html, body {
 .push {
   height: 65px;
 }
+
+// http://stackoverflow.com/a/8738200/3347300
+#warning-message { display: none; }
+@media only screen and (orientation:portrait){
+  .container { display:none; }
+  .footer { display:none; }
+  #warning-message { display:block; }
+}
+@media only screen and (orientation:landscape){
+  #warning-message { display:none; }
+}
