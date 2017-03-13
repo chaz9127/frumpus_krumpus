@@ -63,7 +63,7 @@ html, body {
 
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -65px;
+  margin-bottom: -0;
 }
 .footer,
 .push {
@@ -73,9 +73,9 @@ html, body {
 // http://stackoverflow.com/a/8738200/3347300
 #warning-message { display: none; }
 @media only screen and (orientation:portrait){
-  .container { display:none; }
-  .footer { display:none; }
-  #warning-message { display:block; }
+  // .container { display:none; }
+  // .footer { display:none; }
+  #warning-message { display:none; }
 }
 @media only screen and (orientation:landscape){
   #warning-message { display:none; }

@@ -1,0 +1,12 @@
+<nav class="nav-bar">
+  <ul>
+    <li class="action-bar-item"><a class="action-bar-item-link" ng-click="firstContent()" href="">first</a></li>
+    <li class="action-bar-item"><a class="action-bar-item-link" ng-click="previousContent()" href="">previous</a></li>
+    <li class="action-bar-item"><a class="action-bar-item-link" ng-click="randomContent()" href="">random</a></li>
+    <li class="action-bar-item"><a class="action-bar-item-link" ng-click="nextContent()" href="">next</a></li>
+    <li class="action-bar-item"><a class="action-bar-item-link" ng-click="latestContent()" href="">last</a></li>
+  </ul>
+</nav>
+<div class="comic-wrapper">
+  <img class="comic" ng-src="{{currentContent.image_url}}" alt="">
+</div>

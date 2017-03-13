@@ -4,6 +4,12 @@
   border-bottom: 2px black solid;
   margin: 0px 10px 15px 10px;
 
+  &.coming-soon:hover {
+    &:after {
+      //Coming soon
+    }
+  }
+
   &:hover, &.active {
    border: none;
    font-size: 20px;

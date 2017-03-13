@@ -1,6 +1,11 @@
 .footer {
-  @include grid-column(6);
-  @include grid-push(3);
+  @include grid-media($x-small-grid) {
+    @include grid-column(12);
+  }
+  @include grid-media($medium-grid) {
+    @include grid-column(8);
+    @include grid-push(2);
+  }
 
   .footer-row {
     margin-bottom: 20px;
@@ -9,7 +14,7 @@
   .footer-detail {
     float: left;
   }
-  
+
   .footer-detail:nth-child(2) {
     float: right;
   }

@@ -4,5 +4,4 @@ angular.module('frumpusKrumpus')
 HomeCtrl.$inject = ['$scope'];
 
 function HomeCtrl($scope) {
-  
 }
