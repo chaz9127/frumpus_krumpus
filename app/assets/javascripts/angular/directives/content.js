@@ -32,36 +32,37 @@ function content(ComicAPI, $state) {
     }
 
     scope.firstContent = function() {
-      $state.go(scope.type, {id: 1} )
+      $state.go(scope.type, {id: scope.content[0].slug} )
     }
 
     scope.latestContent = function() {
-      $state.go(scope.type, {id: scope.mostRecent.comic_number} )
+      $state.go(scope.type, {id: scope.mostRecent.slug} )
     }
 
     scope.previousContent = function() {
       var content_id;
-      if(scope.currentContent.comic_number - 1 > 0) {
-        content_id = scope.currentContent.comic_number - 1;
+      if(scope.currentContent.issue_number - 1 > 0) {
+        content_id = scope.content[scope.currentContent.issue_number - 2].slug;
       } else {
-        content_id = scope.mostRecent.comic_number
+        content_id = scope.mostRecent.slug
       }
       $state.go(scope.type, {id: content_id} )
     }
 
     scope.nextContent = function() {
       var content_id;
-      if(scope.currentContent.comic_number + 1 > scope.mostRecent.comic_number) {
-        content_id = 1;
+      if(scope.currentContent.issue_number + 1 > scope.mostRecent.issue_number) {
+        content_id = scope.content[0].slug;
       } else {
-        content_id = scope.currentContent.comic_number + 1
+        content_id = scope.content[scope.currentContent.issue_number].slug
       }
       $state.go(scope.type, {id: content_id} )
     }
 
     scope.randomContent = function() {
-      var randomContentId = randomInt(1,scope.mostRecent.comic_number)
-      $state.go(scope.type, {id: randomContentId} );
+      var randomId = randomInt(1,scope.mostRecent.issue_number)
+      var randomContentSlug = scope.content[randomId - 1].slug
+      $state.go(scope.type, {id: randomContentSlug} );
     }
 
     ///
@@ -74,7 +75,11 @@ function content(ComicAPI, $state) {
     }
 
     function randomInt(min,range) {
-      return Math.floor((Math.random()*(range))+min)
+      var random = Math.floor((Math.random()*(range))+min)
+      if (random === scope.currentContent.issue_number)
+        return randomInt(min,range)
+      else
+        return random
     }
 
   }

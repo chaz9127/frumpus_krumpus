@@ -2,25 +2,25 @@ ActiveAdmin.register Comic do
 
   controller do
     def permitted_params
-      params.permit comic: [:title, :comic_number, :image]
+      params.permit comic: [:title, :issue_number, :image]
     end
   end
 
   index do
     column :title
-    column :comic_number
+    column :issue_number
     column :created_at
     actions
   end
 
   filter :title
-  filter :comic_number
+  filter :issue_number
   filter :created_at
 
   form do |f|
     f.inputs "Comic Details" do
       f.input :title
-      f.input :comic_number
+      f.input :issue_number
       f.input :image, as: :file
     end
     f.actions
@@ -28,8 +28,11 @@ ActiveAdmin.register Comic do
 
   show do |comic|
     attributes_table do
-      row :comic_number
+      row :issue_number
       row :title
+      row :link do
+        link_to "/comic/#{comic.slug}", "/comic/#{comic.slug}"
+      end
       row :image do
         tag("img", src: comic.image.url)
       end

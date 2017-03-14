@@ -1,4 +1,7 @@
 class Comic < ApplicationRecord
+  extend FriendlyId
+  friendly_id :title, use: [:slugged, :finders]
+
   has_attached_file :image,
     default_url: '',
     path: "public/files/images/comics/:style/:basename",
@@ -11,8 +14,9 @@ class Comic < ApplicationRecord
     {
       id: id,
       title: title,
-      comic_number: comic_number,
+      issue_number: issue_number,
       image_url: image.url,
+      slug: slug,
       created_at: created_at,
       updated_at: updated_at
     }
