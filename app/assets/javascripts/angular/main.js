@@ -24,5 +24,10 @@ function configFrumpKrump($stateProvider, $urlRouterProvider, $urlMatcherFactory
       url: '/comic/:id',
       controller: 'ContentCtrl',
       templateUrl:"home/_index.html"
+    })
+    .state('comics', {
+      url: '/comics',
+      controller: 'HomeCtrl',
+      templateUrl:"home/_index.html"
     });
 }
