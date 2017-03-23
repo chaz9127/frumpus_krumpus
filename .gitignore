@@ -20,4 +20,4 @@
 # /vendor/assets/bower_components/**
 
 #Ignore Content files
-/public/files/images/**
+/public/files/images/comics/**
