@@ -1,4 +1,5 @@
 ActiveAdmin.register Comic do
+ config.sort_order = 'issue_number_desc'
 
   controller do
     def permitted_params
