@@ -21,3 +21,6 @@
 
 #Ignore Content files
 /public/files/images/**
+
+# Ignore application configuration
+/config/application.yml
