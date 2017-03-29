@@ -8,11 +8,13 @@ end
 gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'angular-rails-templates', '~> 1.0.2'
 gem "awesome_print", require:"ap"
+gem 'aws-sdk'
 gem 'bourbon'
 gem 'bower'
 gem 'coffee-rails', '~> 4.2'
 gem 'compass'
 gem 'devise'
+gem 'figaro'
 gem 'fog'
 gem 'friendly_id'
 gem 'jbuilder', '~> 2.5'
