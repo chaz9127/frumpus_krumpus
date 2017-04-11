@@ -4,4 +4,5 @@ angular.module('frumpusKrumpus')
 ContentCtrl.$inject = ['$scope', '$state'];
 
 function ContentCtrl($scope, $state) {
+  $scope.state = $state.current.name;
 }

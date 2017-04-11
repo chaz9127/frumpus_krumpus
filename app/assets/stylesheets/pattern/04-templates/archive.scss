@@ -1,0 +1,32 @@
+.archive-container {
+  @include grid-media($x-small-grid) {
+    @include grid-column(6);
+    @include grid-push(4);
+  }
+  @include grid-media($medium-grid) {
+    @include grid-column(5.5);
+    @include grid-push(5);
+  }
+  @include grid-media($large-grid) {
+    @include grid-column(3);
+    @include grid-push(5.5);
+  }
+
+  .archive-list {
+    list-style-type: none;
+  }
+
+  .archive-item {
+    display: block;
+    margin:15px 0px;
+
+    .archive-item-link {
+      color: black;
+      text-decoration: none;
+    }
+
+    .archive-item-link:hover {
+      text-decoration: underline;
+    }
+  }
+}

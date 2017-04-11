@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/comic/:id', to: 'comic#show'
   get '/comics', to: 'home#index'
+  get '/archive', to: 'archive#index'
 
   namespace :api do
     namespace :web do

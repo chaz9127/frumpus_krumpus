@@ -1,0 +1,13 @@
+<div class="logo-wrapper row">
+  <%= image_tag '/files/images/logo.jpeg', class: 'logo'%>
+</div>
+<nav class="nav-bar row">
+  {{$state.current.name}}
+  <ul>
+    <li class="nav-bar-item coming-soon"><a class="nav-bar-item-link coming-soon" href="">about</a></li>
+    <li ng-class="{'active': state === 'archive'}" class="nav-bar-item"><a class="nav-bar-item-link" ui-sref="archive">archive</a></li>
+    <li ng-class="{'active': state === 'comics' || state === 'home'}" class="nav-bar-item"><a class="nav-bar-item-link" ui-sref="comics">comics</a></li>
+    <li class="nav-bar-item coming-soon"><a class="nav-bar-item-link coming-soon" href="">videos</a></li>
+    <li class="nav-bar-item coming-soon"><a class="nav-bar-item-link coming-soon" href="">blog</a></li>
+  </ul>
+</nav>

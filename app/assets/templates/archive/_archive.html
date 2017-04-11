@@ -1,0 +1,8 @@
+<div ng-include="'_header.html'"></div>
+<div class="archive-container">
+  <ul class="archive-list">
+    <li ng-repeat="comic in comics" class="archive-item">
+      <a class="archive-item-link" ng-href="/comic/{{comic.slug}}">#{{comic.issue_number}} - {{comic.title}}</a>
+    </li>
+  </ul>
+</div>
