@@ -1,16 +1,10 @@
 .archive-container {
   @include grid-media($x-small-grid) {
     @include grid-column(6);
-    @include grid-push(4);
+    @include grid-push(3);
   }
-  @include grid-media($medium-grid) {
-    @include grid-column(5.5);
-    @include grid-push(5);
-  }
-  @include grid-media($large-grid) {
-    @include grid-column(3);
-    @include grid-push(5.5);
-  }
+
+  text-align: center;
 
   .archive-list {
     list-style-type: none;
