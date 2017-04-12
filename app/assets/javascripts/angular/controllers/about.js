@@ -1,8 +1,8 @@
 angular.module('frumpusKrumpus')
   .controller('AboutCtrl', AboutCtrl);
 
-AboutCtrl.$inject = ['$scope'];
+AboutCtrl.$inject = ['$scope', '$state'];
 
-function AboutCtrl($scope) {
-
+function AboutCtrl($scope, $state) {
+  $scope.state = $state.current.name;
 }

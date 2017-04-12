@@ -12,7 +12,6 @@
 
   &:hover, &.active {
    border: none;
-   font-size: 20px;
   }
 
   @include grid-media($x-small-grid) {

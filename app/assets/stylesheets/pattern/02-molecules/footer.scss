@@ -2,14 +2,15 @@
   @include grid-media($x-small-grid) {
     @include grid-column(12);
   }
-    @include grid-media($medium-grid) {
-      @include grid-column(6);
-      @include grid-push(3);
-    }
+  @include grid-media($medium-grid) {
+    @include grid-column(6);
+    @include grid-push(3);
+  }
   @include grid-media($x-large-grid) {
     @include grid-column(5);
     @include grid-push(3.5);
   }
+  margin-top: 50px;
 
   .footer-row {
     margin-bottom: 20px;
