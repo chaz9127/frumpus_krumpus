@@ -21,7 +21,7 @@ function configFrumpKrump($stateProvider, $urlRouterProvider, $urlMatcherFactory
       templateUrl:"home/_index.html"
     })
     .state('comic', {
-      url: '/comic/:id',
+      url: '/comics/:id',
       controller: 'ContentCtrl',
       templateUrl:"home/_index.html"
     })
@@ -34,5 +34,10 @@ function configFrumpKrump($stateProvider, $urlRouterProvider, $urlMatcherFactory
       url: '/archive',
       controller: 'ArchiveCtrl',
       templateUrl:"archive/_archive.html"
+    })
+    .state('about', {
+      url: '/about',
+      controller: 'AboutCtrl',
+      templateUrl:"about/_about.html"
     });
 }
